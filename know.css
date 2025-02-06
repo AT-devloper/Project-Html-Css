@@ -1,0 +1,104 @@
+body{
+    width: 100%;
+    height: 90%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(sunset.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    overflow-y: hidden;
+    
+
+}
+.wrapper{
+    
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
+    align-items: center;
+    padding: 30px;
+    gap: 25px;
+    
+
+}
+.ch1 .ch2 .ch3 .cg4 .ch5 .ch6 .ch7 .ch8{
+    
+
+}
+img{
+    padding: 2px;
+    border: 2px solid #fff ;
+    border-radius: 20px;
+}
+.ch1{
+    bottom: 20px;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.ch1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.ch1:hover{
+    scale: 1.1;
+    border: none;
+    transition:.4s;
+    
+   
+}
+.ch2{
+    
+    position: absolute;
+    top: 42.1%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+}
+.ch2 h1{
+    font-size: 3em;
+}
+
+.ch3:hover{
+    scale: 1.1;
+    border: none;
+    transition:.4s;
+   
+}
+
+.ch4:hover{
+    scale: 1.1;
+    border: none;
+    transition:.4s;
+   
+}
+.ch5:hover{
+    scale: 1.1;
+    border: none;
+    transition:.4s;
+   
+}
+.ch6:hover{
+    scale: 1.1;
+    border: none;
+    transition:.4s;
+   
+}
+.ch7:hover{
+    scale: 1.1;
+    border: none;
+    transition:.4s;
+   
+}
+
+.ch8:hover{
+    scale: 1.1;
+    border: none;
+    transition:.4s;
+   
+}
+
