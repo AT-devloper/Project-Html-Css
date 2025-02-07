@@ -39,6 +39,12 @@ body{
     position: relative;
     
 }
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    list-style: none
+
+}
 
 .menu a:before{
         content:"";
@@ -96,4 +102,35 @@ body{
 .text a:hover{
     background: transparent;
     border: 2px solid indianred;
+}
+.navbar label{
+    display: none;
+}
+#click{
+    display: none;
+    
+}
+#click:checked~.navbar ul{
+    display: block;
+}
+
+
+@media screen and (max-width:680px) {
+    .navbar label{
+        display: block;
+    }
+    .navbar ul {
+        display: none;
+        position: absolute;
+        top: 50px;
+        background-color: aquamarine;
+        width: 90%;
+        
+
+    }
+    .navbar ul li{
+        
+        padding: 5px;
+        color: #fff
+    }
 }

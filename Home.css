@@ -1,74 +1,143 @@
+html{
+    height: 140vh;
+    width: 100%;
+}
 body{  
-    background: url(back.jpg) no-repeat;
+    background:/*linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),*/url(Moutain3.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 100vh; 
+    
 }
-
 .navbar{
     display: flex;
-    justify-content: space-around;   
+    justify-content: space-between;   
     align-items: center;     
     background: transparent;
     color: #fff;
     border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(o, 0, o, .2);
     border-radius: 5px;
-    padding: 20px 30px;   
+    padding: 10px 30px; 
 }
 
 .logo{
-
-            position: relative;
-            animation-name: slide;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-    }
-
-@keyframes slide {
-  
-
-    0%{
-        left:0px;
-        top:0px ; 
-        rotate: 90deg;
-      }
-      0%{left: 150px;
-           top: 0px;
-              /* border-radius: 100px; */
-               /*box-shadow: 0px 0px 10px 6px gray;*/
-              }
-      100%{
-        left: 0px;
-        top: opx;
-        scale: 1.2;
-      }
-       /* to{
-        left: 200px;
-        top: 0px;
-    }
-    from{
-        left: 0px;
-        top: 0px; 
-    } */
+    font-family: "Orbitron", serif;
+    letter-spacing: 5px;
+    color: aquamarine;
 }
-
 
 .navbar ul{
     display: flex;
     justify-content: center;
-    gap: 30px;
-    list-style: none;
+    gap: 50px;
+    list-style: none;    
 }
 
-.navbar ul li a {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-size-adjust: 40PX;
+.navbar ul li a {    
     text-decoration: none;
     color: #fff;
 }
+.H a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: 4s;
+}
+
+.H a:hover{
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;;
+}
+.login a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: indianred;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.login a:hover{
+    background-color: transparent;
+    border: 2px solid indianred;
+}
+.navbar label{
+    display: none;
+}
+#click{
+    display: none;
+}
+#click:checked~.navbar ul{
+    display: block;
+}
 
 
+@media screen and (max-width:735px){
+    .navbar label{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0%;
+        background-color:transparent;       
+        gap: 5px;
+    }
+    .navbar ul li{      
+        padding: 12px;
+        color: #fff;
+    }   
+}
+.wrapper{
+    display: flex;
+    gap: 90px;
+    padding:40px;
 
+}
+.T1{
+    height: 100%;
+    top: 40%;
+    left: 5%;
+    text-align: left;
+    color: #fff;
+    padding: 50px;
+}
+.T1 h1{
+    font-size: 39px;
+    font-family: "Yatra One", serif;
+    color: aqua;
+}
+.T1 h1::first-line{
+    color:#fff;
+    font-size: 50px;
+    letter-spacing: 5px;
+ 
+}
+
+.T2:hover{
+    
+        bottom: 50px;
+        scale: 1.1;
+        border: none;
+        transition:.4s;
+       
+    }
+    
+
+footer .para{
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    font-size: 10px;
+}
