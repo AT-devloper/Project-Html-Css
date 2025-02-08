@@ -88,13 +88,12 @@ body{
         right: 0%;
         background-color:transparent;       
         gap: 5px;
-    } 
+    }
     .navbar ul li{      
         padding: 12px;
         color: #fff;
     }   
 }
-
 
 .wrapper{
     display: grid;

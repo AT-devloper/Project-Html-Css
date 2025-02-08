@@ -98,8 +98,10 @@ body{
 
 .wrapper{
     display: grid;
-    gap: 90px;
-    padding:40px;
+    grid-template-columns: repeat(2,auto);
+    gap:50px;
+    padding:90px;
+    align-items: center;
 
 }
 .T1{
@@ -118,9 +120,10 @@ body{
 .T1 h1::first-line{
     color:#fff;
     font-size: 50px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
  
 }
+
 
 .T2:hover{
     
@@ -130,11 +133,39 @@ body{
         transition:.4s;
        
     }
+    @media screen and (max-width:900px){
+        .wrapper{
+            
+            grid-template-columns: repeat(1,auto);
+            grid-template-rows: repeat(2,auto);
+            justify-content: center;
+            row-gap: 2px;
+            padding-top: 1px;
+        }
+    
+            
+    }
+    .btn a{
+        text-decoration: none;
+        background-color: transparent;
+        color: #fff;
+        padding: 10px 20px;
+        letter-spacing: 5px;
+        border: 2px solid indianred;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    .btn a:hover{
+        background:salmon;
+        border: transparent;
+        color: #333;
+    }   
     
 
 footer .para{
     position: fixed;
     bottom: 0%;
+   
     text-align: center;
     border: 1px solid salmon;
     border-radius: 5px;
