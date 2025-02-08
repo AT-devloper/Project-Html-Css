@@ -1,0 +1,143 @@
+html{
+    height: 140vh;
+    width: 100%;
+}
+body{  
+    background:/*linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),*/url(Moutain3.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;     
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(o, 0, o, .2);
+    border-radius: 5px;
+    padding: 10px 30px; 
+}
+
+.logo{
+    font-family: "Orbitron", serif;
+    letter-spacing: 5px;
+    color: aquamarine;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;    
+}
+
+.navbar ul li a {    
+    text-decoration: none;
+    color: #fff;
+}
+.H a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: 4s;
+}
+
+.H a:hover{
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;;
+}
+.login a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: indianred;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.login a:hover{
+    background-color: transparent;
+    border: 2px solid indianred;
+}
+.navbar label{
+    display: none;
+}
+#click{
+    display: none;
+}
+#click:checked~.navbar ul{
+    display: block;
+}
+
+
+@media screen and (max-width:735px){
+    .navbar label{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0%;
+        background-color:transparent;       
+        gap: 5px;
+    }
+    .navbar ul li{      
+        padding: 12px;
+        color: #fff;
+    }   
+}
+.wrapper{
+    display: flex;
+    gap: 90px;
+    padding:40px;
+
+}
+.T1{
+    height: 100%;
+    top: 40%;
+    left: 5%;
+    text-align: left;
+    color: #fff;
+    padding: 50px;
+}
+.T1 h1{
+    font-size: 39px;
+    font-family: "Yatra One", serif;
+    color: aqua;
+}
+.T1 h1::first-line{
+    color:#fff;
+    font-size: 50px;
+    letter-spacing: 5px;
+ 
+}
+
+.T2:hover{
+    
+        bottom: 50px;
+        scale: 1.1;
+        border: none;
+        transition:.4s;
+       
+    }
+    
+
+footer .para{
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    font-size: 10px;
+}
