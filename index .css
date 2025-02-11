@@ -1,9 +1,9 @@
 html{
-    height: 140vh;
+    height: 150vh;
     width: 100%;
 }
 body{  
-    background:/*linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),*/url(Moutain3.jpg);
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(Moutain3.jpg);
     background-size: cover;
     background-position: center;
     
@@ -50,7 +50,8 @@ body{
 .H a:hover{
     background-color: transparent;
     border-bottom: 2px solid #fff;
-    border-top: 2px solid #fff;;
+    border-top: 2px solid #fff;
+    
 }
 .login a{
     text-decoration: none;
@@ -108,7 +109,6 @@ body{
     height: 100%;
     top: 40%;
     left: 5%;
-    text-align: left;
     color: #fff;
     padding: 50px;
 }
@@ -123,14 +123,30 @@ body{
     letter-spacing: 3px;
  
 }
-
+.btn a{
+    
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border: 2px solid indianred;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn a:hover{
+    background:salmon;
+    border: transparent;
+    color: #333;
+}   
 
 .T2:hover{
-    
+
+        box-shadow: 0px 1px 9px 5px rgb(41, 69, 96);
         bottom: 50px;
         scale: 1.1;
         border: none;
-        transition:.4s;
+        transition:.5s;
        
     }
     @media screen and (max-width:900px){
@@ -141,36 +157,27 @@ body{
             justify-content: center;
             row-gap: 2px;
             padding-top: 1px;
+            text-shadow: 1px 1px 3px salmon;
         }
+
+
+     
+        .T2{
+            height: 453px;
+            width: 364px;
+        }
+    } 
     
-            
-    }
-    .btn a{
-        text-decoration: none;
-        background-color: transparent;
-        color: #fff;
-        padding: 10px 20px;
-        letter-spacing: 5px;
-        border: 2px solid indianred;
-        border-radius: 10px;
-        transition: 0.5s;
-    }
-    .btn a:hover{
-        background:salmon;
-        border: transparent;
-        color: #333;
-    }   
+    
     
 
-footer .para{
-    position: fixed;
-    bottom: 0%;
-   
+.footer p{
+    border:2px solid #333;
     text-align: center;
-    border: 1px solid salmon;
     border-radius: 5px;
     background-color: transparent;
     color: #fff;
-    padding: 10px;
+    padding: 9px;
     font-size: 10px;
+    letter-spacing: 5px;
 }

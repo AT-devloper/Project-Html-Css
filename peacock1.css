@@ -1,0 +1,62 @@
+html{
+    height: 140vh;
+    width: 100%;
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(peacock5\ \(7\).jpg);
+    background-size: cover;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly  ;
+    padding: 4px;
+    align-items: center;
+
+}
+.header h1{
+    font-family: "Yatra One", serif;
+    font-size: 250%;
+    color: aquamarine;
+    letter-spacing: 2px;
+    text-shadow:-6px -6px 5px #333;;
+}
+.home a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: blue;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.home a:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+}
+.peacock{
+    
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,310px);
+    grid-template-rows: repeat(3,355px);
+    background-size: cover;
+    padding:50px;
+    gap: 10px;
+}
+.ch1 ,.ch2, .ch3, .ch4, .ch5, .ch6, .ch7{
+    border: none;
+    padding: .5px;
+       
+} 
+.ch1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end:1;
+}
+.ch6{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
