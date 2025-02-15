@@ -1,5 +1,5 @@
 html{
-    height: 150vh;
+    height: 140vh;
     width: 100%;
 }
 body{  
@@ -139,19 +139,24 @@ body{
     border: transparent;
     color: #333;
 }   
+.T2{
+    padding: 0px;
+    border: 0px solid ;
+    border-radius: 20px;
+}
 .T2 img{
-    border: 2px solid;
+    border: 0px ;
     border-radius: 20px;
     
 }
 
-.T2:hover{ 
+.T2 img:hover{ 
         box-shadow: 0px 1px 9px 5px #fff;
         border-radius: 20px;
         bottom: 50px;
         scale: 1.1;
         border: none;
-        transition:.5s;
+        transition:.8s;
        
     }
 @media screen and (max-width:900px){
@@ -163,27 +168,24 @@ body{
             row-gap: 2px;
             padding-top: 1px;
             text-shadow: 1px 1px 3px salmon;
+            align-items: center;
         }
 
-
+        .T1 p{
+                padding-right: 50px;
+        }
      
-        .T2{
-            height: 453px;
-            width: 364px;
-        }
+       .T2{
+        padding-left: 50px;
+       } 
     } 
     
     
-    
-
 .footer p{
-    
-    border:2px solid #333;
-    text-align: center;
-    border-radius: 5px;
-    background-color: transparent;
+
+    border-top: 3px dotted #fff;
     color: #fff;
-    padding: 9px;
-    font-size: 10px;
-    letter-spacing: 5px;
+    text-align: center;
+    padding: 20px;
+
 }
