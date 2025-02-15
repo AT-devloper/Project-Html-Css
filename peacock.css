@@ -3,12 +3,31 @@ body{   height: 100vh;
         background-size: cover;
         background-position: center;
 }
+.header a{
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    border: 1px solid red;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.header a:hover{
+    background:red;
+    border: transparent;
+    color: #333;
+}   
+
 .peamain{
-   display: grid;
-   grid-template-columns: repeat(2,auto);
-   grid-template-rows: repeat(1,100vh);
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(1,100vh);
     justify-content: space-around;
-   justify-content: center;
+    justify-content: center;
     gap: 300px;
     background-color: transparent;
 }
@@ -18,10 +37,10 @@ body{   height: 100vh;
     background-color: transparent;
     font-family: "Yatra One", serif;
     font-size: 290%;
-    color: blue;
+    color:orange;
     letter-spacing: 5px;
-    padding: 100PX;
-    text-shadow:-2px -5px 5px #fff;;
+    padding: 80PX;
+    text-shadow:-2px -5px 5px #fff;
 }
 .ch1 .btn a{
     position: absolute;
@@ -31,20 +50,48 @@ body{   height: 100vh;
     color: #fff;
     padding: 10px 20px;
     letter-spacing: 5px;
-    border: 2px solid ;
+    border: 2px solid orange;
     border-radius: 10px;
     transition: 0.5s;
 }
 .ch1 .btn a:hover{
-    background:salmon;
+    background:orange;
     border: transparent;
     color: #333;
 }   
 .ch2{
-    padding-right: 20px;
-    padding-top: 150px;   
-    color: #fff;
     
+    padding-right: 50px;
+    padding-top: 150px;   
+    color: green;   
     font-size: 150%;
     font-family: "Raleway", serif;
+}
+
+@media screen and (max-width : 650px){
+
+    .peamain {
+        display: grid;
+        grid-template-columns:repeat(1,auto);
+        grid-template-rows: repeat(2,auto);
+        align-items: center;
+        row-gap: 80px;
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .ch1{
+        padding-top: 150px;}
+
+    .ch1 .btn a{
+        position: absolute;
+        top: 150px;
+        left: 90px;
+
+    }   
+    
+    .ch2{
+        padding-left: 70px;
+    }
+
 }

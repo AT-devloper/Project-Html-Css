@@ -1,0 +1,146 @@
+html{
+    height: 140vh;
+    width: 100%;
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(birds.jpg);
+    background-size: cover;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly  ;
+    padding: 4px;
+    align-items: center;
+
+}
+.header h1{
+    font-family: "Yatra One", serif;
+    font-size: 250%;
+    color:#fff;
+    
+    letter-spacing: 2px;
+    text-shadow:-6px 0px 5px blue;
+}
+.home a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: blue;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.home a:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+}
+.all{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(4,auto);
+    padding: 50px;
+    gap: 20px;
+    row-gap:70px;
+    background-size: cover;
+    color: #fff;
+    text-shadow:0px 0px 5px indianred;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-family: "Yatra One", serif;
+
+}
+
+.all img{
+    border: 2px solid #333;
+    border-radius: 40px;
+}
+
+.ch1, .ch3, .ch5, .ch7{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+}
+.ch2, .ch4, .ch6 , .ch8{
+    grid-column-start:3 ;
+    grid-column-end: 5;
+}
+.all .ch1 img:hover{
+    
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 4px #fff;
+    bottom: 50px;
+    border: none;
+    transition:.5s;
+}
+.all .ch2 img:hover{
+    
+    border-radius: 40px;
+    box-shadow: 0px 1px 9px 8px #fff;
+    bottom: 50px;
+    border: none;
+    transition:.5s;
+}
+.all .ch3 img:hover{
+    
+    border-radius: 40px;
+    box-shadow: 0px 1px 9px 8px #fff;
+    bottom: 50px;
+    border: none;
+    transition:.5s;
+}
+.all .ch4 img:hover{
+    
+    border-radius: 40px;
+    box-shadow: 0px 1px 9px 8px #fff;
+    bottom: 50px;
+    border: none;
+    transition:.5s;
+}
+.all .ch5 img:hover{
+    
+    border-radius: 40px;
+    box-shadow: 0px 1px 9px 8px #fff;
+    bottom: 50px;
+    border: none;
+    transition:.5s;
+}
+.all .ch6 img:hover{
+    
+    border-radius: 40px;
+    box-shadow: 0px 1px 9px 8px #fff;
+    bottom: 50px;
+    border: none;
+    transition:.5s;
+}
+.all .ch7 img:hover{
+    
+    border-radius: 40px;
+    box-shadow: 0px 1px 9px 8px #fff;
+    bottom: 50px;
+    border: none;
+    transition:.5s;
+}
+.all .ch8 img:hover{
+    
+    border-radius: 40px;
+    box-shadow: 0px 1px 9px 8px #fff;
+    bottom: 50px;
+    border: none;
+    transition:.5s;
+}
+
+@media screen and (max-width:900px){
+
+    .all{
+
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(8,auto);
+        row-gap: 15px;
+        padding: 40px;
+    }
+
+}
+
+
