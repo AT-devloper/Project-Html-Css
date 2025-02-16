@@ -54,11 +54,31 @@ body{
 .ch1{
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start:1;
-    grid-row-end:1;
 }
 .ch6{
     grid-column-start: 3;
     grid-column-end: 5;
 }
+@media screen and (max-width:900px){
+    .peacock{    
+    display: grid;
+    row-gap: 15px;
+    align-items: center;
+    padding: 50px;
+    }
+
+.ch1, .ch6{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.ch2, .ch4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.ch3, .ch5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+}
+
 
